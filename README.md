@@ -48,4 +48,4 @@ If you want to change this address, you need to change the network address in do
 
 *user*: postgres
 
-*passsword*: postgres
+*password*: postgres
