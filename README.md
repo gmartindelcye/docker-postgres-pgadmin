@@ -12,8 +12,8 @@ If you want to change this address, you need to change the network address in do
 1. Create permanent volumes routes:
 
     ```bash
-    sudo mkdir /opt/pgsql/data
-    sudo mkdir /opt/pgadmin/data
+    sudo mkdir -p /opt/pgsql/data
+    sudo mkdir -p /opt/pgadmin/data
     ```
 
 2. Run docker compose:
