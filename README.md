@@ -12,23 +12,35 @@ If you want to change this address, you need to change the network address in do
 1. Create permanent volumes routes:
 
     ```bash
-    sudo mkdir -p /opt/pgsql/data
-    sudo mkdir -p /opt/pgadmin/data
+    sudo mkdir -p pgsql/data
+    sudo mkdir -p pgadmin/data
     ```
 
-2. Run docker compose:
+2. Change permissions to pgadmin directory in order to be accessed:
+
+    ```bash
+    sudo chown -R 5050:5050 pgadmin
+    ```
+
+3. Run docker compose:
 
     ```bash
     docker compose up -d
     ```
 
-3. Access pgadmin in browser:
+4. Access pgadmin in browser:
 
     ```bash
     https://localhost:5050
     ```
 
-4. Stop docker compose:
+    or
+
+   ```bash
+   https://server_url:5050
+   ```
+
+5. Stop docker compose:
 
     ```bash
     docker compose down
